@@ -1,3 +1,2 @@
 # Google-Code-Jam
-My solutions for Google Code Jam problems.
-
+My solutions to Google Code Jam problems.
