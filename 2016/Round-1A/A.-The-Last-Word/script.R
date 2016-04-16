@@ -27,9 +27,11 @@ gsub("\\","/",input,fixed=TRUE)
 getLastWord<-function(my_string){
 
 my_letters<-strsplit(my_string,split="")[[1]]
-output<-my_letters[1]
 
-if(length(my_letters)==1){return(my_string)}
+if(length(my_letters)==1){
+return(my_string)
+}else{
+output<-my_letters[1]
 
 for(i in 2:length(my_letters)){
 
@@ -41,6 +43,8 @@ output<-c(output,my_letters[i])
 }
 
 return(paste(output,collapse=""))
+}
+
 }
 
 
