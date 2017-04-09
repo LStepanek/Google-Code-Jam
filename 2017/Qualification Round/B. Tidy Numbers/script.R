@@ -53,6 +53,7 @@ solveTheCase <- function(my_case){
     # '''
     
     my_digits <- as.integer(strsplit(my_case, split = "")[[1]])
+    
     i <- length(my_digits)
     
     while(!isTidy(my_digits) & i > 0){
