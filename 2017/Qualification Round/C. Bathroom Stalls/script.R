@@ -66,8 +66,7 @@ solveTheCase <- function(my_case){
             
         )
         
-    )
-    
+    )    
     
 }
 
