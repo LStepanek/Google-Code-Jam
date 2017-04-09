@@ -74,9 +74,13 @@ solveTheCase <- function(
     }
     
     if(! "-" %in% S[(length(S) - K + 1):length(S)]){
+        
         return(output)
+        
     }else{
+        
         return("IMPOSSIBLE")
+        
     }
     
 }
