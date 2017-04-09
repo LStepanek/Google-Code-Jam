@@ -35,6 +35,7 @@ solveTheCase <- function(my_case){
     K <- as.integer(strsplit(my_case, split = " ")[[1]][2])
     
     l <- floor(log2(K))
+    
     my_fraction <- (N - 2 ^ l + 1) / (2 ^ l)
     
     if(K - 2 ^ l + 1 <= ((my_fraction) - floor(my_fraction)) * 2 ^ l){
@@ -52,13 +53,19 @@ solveTheCase <- function(my_case){
     }
     
     return(
+        
         paste(
+            
             format(c(
+                
                 ceiling((lcs_of_empty_stalls - 1) / 2),
                 floor((lcs_of_empty_stalls - 1) / 2)
-            ), scientific = FALSE),
+                
+            ), scientific = FALSE),            
             collapse = " "
+            
         )
+        
     )
     
     
